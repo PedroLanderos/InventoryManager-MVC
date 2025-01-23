@@ -9,7 +9,7 @@ namespace InventoryManager.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-        public DbSet<Product> Productos { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categorias { get; set; }
         public DbSet<Provider> Proveedores { get; set; }
         public DbSet<LogInventory> LogsInventario { get; set; }

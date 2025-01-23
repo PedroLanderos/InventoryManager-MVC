@@ -8,9 +8,9 @@ namespace InventoryManager.Interfaces
     {
         Task<IEnumerable<Product>> GetProductsAsync();
         Task<Product> GetProductByIdAsync(int productId);
-        Task CreateProductAsync(Product productDTO);
-        Task UpdateProductAsync(Product productDTO);
+        Task CreateProductAsync(Product product);
+        Task UpdateProductAsync(Product product);
         Task DeleteProductAsync(int productId);
-        Task<Product> GetByAsync(Expression<Func<Product, bool>> predicate);
+        Task<IEnumerable<Product>> GetByAsync(Expression<Func<Product, bool>> predicate);
     }
 }
